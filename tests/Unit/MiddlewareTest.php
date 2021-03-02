@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
+use Tests\Mock\Load\LoadMock;
 
 class MiddlewareTest extends TestCase
 {
@@ -10,7 +11,7 @@ class MiddlewareTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->mock = $this->loadMock();
+        $this->mock = LoadMock::getDataUser();
         parent::setUp();
     }
 
@@ -20,13 +21,7 @@ class MiddlewareTest extends TestCase
     public function makeUser()
     {
         //TODO (feature|sanitize data) -> Create test to middleware, save data in DB.
-        $data = [
-
-        ];
-    }
-
-    private function loadMock()
-    {
 
     }
+
 }

@@ -6,5 +6,8 @@
         <testsuite name="example">
             <file>./tests/ExampleTest.php</file>
         </testsuite>
+        <testsuite name="middleware">
+            <file>./tests/Unit/MiddlewareTest.php</file>
+        </testsuite>
     </testsuites>
 </phpunit>
