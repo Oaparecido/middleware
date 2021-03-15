@@ -16,7 +16,7 @@ services:
       - ./.docker/mysql/data:/var/lib/mysql_databases
     environment:
       MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_DATABASE: "cli-crud"
+      MYSQL_DATABASE: "middleware"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
 
   phpmyadmin:
