@@ -9,5 +9,8 @@
         <testsuite name="middleware">
             <file>./tests/Unit/MiddlewareTest.php</file>
         </testsuite>
+        <testsuite name="database">
+            <file>./tests/Unit/DB/DBTest.php</file>
+        </testsuite>
     </testsuites>
 </phpunit>
