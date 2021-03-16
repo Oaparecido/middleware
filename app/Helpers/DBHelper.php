@@ -10,7 +10,6 @@ use PDO;
 
 class DBHelper
 {
-//    private static $pdo;
 
     public static function up(): PDO
     {
@@ -20,5 +19,4 @@ class DBHelper
             throw new Exception($exception->getMessage(), $exception->getCode());
         }
     }
-
 }
