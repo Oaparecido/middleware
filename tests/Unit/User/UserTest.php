@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\User;
 
+use Controllers\UserController;
 use PHPUnit\Framework\TestCase;
 use Tests\Mock\Load\LoadMock;
 
@@ -21,7 +22,7 @@ class UserTest extends TestCase
     public function create()
     {
         //TODO (feature) -> Create user and save data in DB.
-        $controller = new Controllers\UserController();
+        $controller = new UserController();
 
         $response = $controller->store($this->mock);
 

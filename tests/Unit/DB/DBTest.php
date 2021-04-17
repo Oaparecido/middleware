@@ -3,6 +3,7 @@
 namespace Tests\DB;
 
 use Helpers\DBHelper;
+use Models\User;
 use PHPUnit\Framework\TestCase;
 use Exception;
 
@@ -17,5 +18,4 @@ class DBTest extends TestCase
         $connect = DBHelper::up();
         $this->assertNotNull($connect);
     }
-
 }
